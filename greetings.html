@@ -28,13 +28,13 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+    weekday[0] = "星期日";
+    weekday[1] = "星期一";
+    weekday[2] = "星期二";
+    weekday[3] = "星期三";
+    weekday[4] = "星期四";
+    weekday[5] = "星期五";
+    weekday[6] = "星期六";
 
     
     var today = new Date();
@@ -45,13 +45,13 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = '早安！  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = '午安！ ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = '晚安！  ';
 
     document.getElementById('lbl').innerHTML =
-        greet+="Hey, Neo !! "+`<div id="date"> It's ${date}</div>`;
+        greet+=" Neo "+`<div id="date"> 今天是 ${date}</div>`;
 </script> 
 </html>
